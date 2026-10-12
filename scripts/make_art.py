@@ -76,7 +76,7 @@ def critter(img: Image.Image, cx: int, cy: int, r: int, body: tuple, evil: bool 
     hl = hl.filter(ImageFilter.GaussianBlur(r * 0.06))
     img.paste(hl, (0, 0), hl)
     d = ImageDraw.Draw(img)
-    # máscara de ladrão
+    # máscara de pegador
     if mask:
         d.rectangle((cx - r * 0.95, cy - r * 0.35, cx + r * 0.95, cy + r * 0.1), fill=(25, 25, 35))
     # olhos
@@ -131,7 +131,7 @@ def make_icon():
     coin(img, 420, 130, 52)
     coin(img, 95, 160, 40)
     sparkles(img, 25, seed=3)
-    outlined_text(img, (256, 70), "ROUBA", 92, (255, 220, 60), (20, 20, 30), 9)
+    outlined_text(img, (256, 70), "PEGA", 92, (255, 220, 60), (20, 20, 30), 9)
     outlined_text(img, (256, 455), "BICHOS!", 86, (255, 255, 255), (20, 20, 30), 9)
     img.save(os.path.join(OUT, "icone_512.png"))
 
@@ -149,7 +149,7 @@ def make_thumbnail():
     # bichos na base
     critter(img, 1300, 880, 60, (120, 200, 255))
     critter(img, 1700, 880, 60, (255, 220, 90))
-    # ladrão grande carregando bicho
+    # pegador grande carregando bicho
     critter(img, 620, 640, 250, (90, 230, 160), evil=True, mask=True)
     critter(img, 620, 330, 110, (255, 180, 60))
     # cadeado
@@ -160,8 +160,8 @@ def make_thumbnail():
     coin(img, 150, 900, 55)
     coin(img, 1800, 200, 50)
     sparkles(img, 60, seed=11)
-    outlined_text(img, (960, 140), "ROUBA BICHOS!", 150, (255, 230, 60), (20, 20, 30), 14)
-    outlined_text(img, (960, 990), "ROUBE • DEFENDA • FIQUE RICO", 72, (255, 255, 255), (20, 20, 30), 10)
+    outlined_text(img, (960, 140), "PEGA BICHOS!", 150, (255, 230, 60), (20, 20, 30), 14)
+    outlined_text(img, (960, 990), "PEGUE • DEFENDA • FIQUE RICO", 72, (255, 255, 255), (20, 20, 30), 10)
     # selo NOVO
     badge = Image.new("RGBA", (420, 140), (0, 0, 0, 0))
     bd = ImageDraw.Draw(badge)

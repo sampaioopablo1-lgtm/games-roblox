@@ -191,7 +191,7 @@ def fast_thief():
         d.rounded_rectangle((40, y, 150 - i * 20, y + 22), 11, fill=(255, 255, 255))
     critter(img, 320, 230, 120, (90, 230, 160), evil=True, mask=True)
     critter(img, 320, 80, 50, (255, 180, 60))
-    badge(img, "LADRÃO VELOZ", (80, 20, 170))
+    badge(img, "PEGADOR VELOZ", (80, 20, 170))
     return img
 
 
@@ -273,7 +273,7 @@ ITEMS = {
         "3_mais4_vagas": extra_slots,
         "4_super_cadeado": super_lock,
         "5_sortudo": lucky,
-        "6_ladrao_veloz": fast_thief,
+        "6_pegador_veloz": fast_thief,
     },
     "produtos": {
         "1_saco_de_moedas": lambda: cash_pack(1, "SACO MOEDAS", (120, 220, 120), (20, 110, 60)),

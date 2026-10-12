@@ -2,18 +2,18 @@
 
 ## Nome (máx. 50)
 ```
-Rouba Bichos! 😈 [NOVO]
+Pega Bichos! 😈 [NOVO]
 ```
 > Dica: a cada atualização troque a tag entre colchetes: `[🎃 HALLOWEEN]`, `[🐉 NOVO BICHO]`, `[x2 SORTE]`.
 > Isso é o que os jogos do top 10 fazem para aparecer como "atualizado".
 
 ## Descrição (máx. 1000) — com palavras-chave de busca
 ```
-😈 ROUBA BICHOS! — Compre bichos fofos, ROUBE os dos outros e proteja a sua base!
+😈 PEGA BICHOS! — Compre bichos fofos, PEGUE os dos outros e proteja a sua base!
 
 🐾 Pegue bichos na esteira e ganhe dinheiro a cada segundo
-😈 Segure E para ROUBAR da base de outros jogadores
-🔒 Tranque sua base e dê TAPAS nos ladrões
+😈 Segure E para PEGAR bichos da base de outros jogadores
+🔒 Tranque sua base e dê TAPAS em quem tentar pegar os seus
 ✨ 16 bichos, raridades SECRETAS e mutações OURO e DIAMANTE
 🔁 Renasça e multiplique sua renda para sempre
 🎁 Prêmio diário + ganho offline + bônus de AMIGOS (+50%)
@@ -21,7 +21,7 @@ Rouba Bichos! 😈 [NOVO]
 👍 Curta e ⭐ favorite para ganhar atualizações toda semana!
 👥 Jogue com amigos: cada amigo no servidor = +10% de dinheiro
 
-Tags: steal a brainrot, roubar, rouba, bichos, pets, simulador, simulator, tycoon, base, ladrão, steal, brainrot, grow a garden, adopt, animais, fofo, mutação, raro, secreto, renascimento, rebirth, dinheiro, rico, br, português, brasil, celular, mobile, 2 jogadores, amigos
+Tags: steal a brainrot, pega bichos, pegar, bichos, pets, simulador, simulator, tycoon, base, steal, brainrot, grow a garden, adopt, animais, fofo, mutação, raro, secreto, renascimento, rebirth, dinheiro, rico, br, português, brasil, celular, mobile, 2 jogadores, amigos
 ```
 
 ## Gênero
@@ -37,6 +37,6 @@ Tags: steal a brainrot, roubar, rouba, bichos, pets, simulador, simulator, tycoo
 ## Primeiro post de divulgação (TikTok / Shorts / Reels)
 Legenda:
 ```
-ROUBEI o bicho SECRETO dele 😈💎 #roblox #robloxbrasil #stealabrainrot #roubabichos #jogos #fyp
+PEGUEI o bicho SECRETO dele 😈💎 #roblox #robloxbrasil #stealabrainrot #pegabichos #jogos #fyp
 ```
-Grave 15–30 s: você roubando um bicho raro, o dono correndo atrás, tapa, fuga para a base. Corte rápido, texto grande na tela, som viral do momento.
+Grave 15–30 s: você pegando um bicho raro, o dono correndo atrás, tapa, fuga para a base. Corte rápido, texto grande na tela, som viral do momento.

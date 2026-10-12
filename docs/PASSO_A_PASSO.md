@@ -5,7 +5,7 @@ Tempo total: ~1 hora. Você só precisa de um PC (Windows ou Mac) e uma conta Ro
 ## Parte 1 — Abrir o jogo no seu computador (10 min)
 
 1. **Instale o Roblox Studio** (grátis): <https://create.roblox.com> → botão **Start Creating** → instale e entre com sua conta Roblox.
-2. **Baixe o jogo**: neste repositório, abra a pasta `build`, clique em `RoubaBichos.rbxl` e depois no botão **Download raw file** (ícone de download, canto superior direito).
+2. **Baixe o jogo**: neste repositório, abra a pasta `build`, clique em `PegaBichos.rbxl` e depois no botão **Download raw file** (ícone de download, canto superior direito).
 3. **Dê dois cliques** no arquivo baixado. Ele abre no Roblox Studio.
 4. **Ligue o salvamento de dados**: no Studio, menu **Home → Game Settings → Security** → ative **Enable Studio Access to API Services** → **Save**.
 5. Clique em **Play** (botão ▶ no topo). Você deve ver a esteira com bichos, as bases e o HUD. Ande até um bicho e aperte **E** para comprar.
@@ -15,7 +15,7 @@ Tempo total: ~1 hora. Você só precisa de um PC (Windows ou Mac) e uma conta Ro
 ## Parte 2 — Publicar (5 min)
 
 1. **File → Publish to Roblox**.
-2. Nome: `Rouba Bichos!` · Descrição: "Compre bichos, roube dos outros e proteja sua base!" · Gênero: *Adventure* · Dispositivos: marque **todos** (PC, celular, tablet, console) — celular é mais da metade dos jogadores.
+2. Nome: `Pega Bichos!` · Descrição: "Compre bichos, pegue os dos outros e proteja sua base!" · Gênero: *Adventure* · Dispositivos: marque **todos** (PC, celular, tablet, console) — celular é mais da metade dos jogadores.
 3. Clique em **Create**. Depois, no mesmo painel, mude **Private → Public**.
 
 ## Parte 3 — Criar os itens que vendem (20 min)
@@ -32,7 +32,7 @@ Em **Passes → Create a Pass**, crie um por vez com estes nomes e preços (em R
 | +4 Vagas na Base | 249 |
 | Super Cadeado | 149 |
 | Sortudo | 299 |
-| Ladrão Veloz | 179 |
+| Pegador Veloz | 179 |
 
 Depois de criar cada um, clique nele e ative **Item for sale**. Anote o **número do ID** que aparece na URL (ex.: `.../passes/123456789/...`).
 
@@ -63,11 +63,11 @@ Pronto: o botão **🛒 Loja** dentro do jogo passa a mostrar os itens e você r
 
 ## Parte 4 — Ícone e capa (10 min)
 
-No Creator Hub → seu jogo → **Basic Settings**: suba um ícone (512×512) e uma capa (1920×1080). Pode criar no Canva: um bicho colorido grande, texto "ROUBA BICHOS!" e um 😈. Ícone chamativo é o que mais influencia cliques.
+No Creator Hub → seu jogo → **Basic Settings**: suba um ícone (512×512) e uma capa (1920×1080). Pode criar no Canva: um bicho colorido grande, texto "PEGA BICHOS!" e um 😈. Ícone chamativo é o que mais influencia cliques.
 
 ## Parte 5 — Trazer jogadores (contínuo)
 
-- Grave clipes de 15–30 s de roubos e defesas (o Studio grava com **F12** ou use o OBS) e poste no TikTok / YouTube Shorts / Instagram Reels com #roblox #stealabrainrot.
+- Grave clipes de 15–30 s de "pegas" e defesas (o Studio grava com **F12** ou use o OBS) e poste no TikTok / YouTube Shorts / Instagram Reels com #roblox #stealabrainrot.
 - Peça para amigos jogarem juntos — o jogo dá **+10 % de renda por amigo no mesmo servidor**, mostre isso nos vídeos.
 - Toda semana mude algo pequeno (um bicho novo em `Config.luau`, um preço) e publique: a Roblox favorece jogos atualizados.
 - Quando tiver jogadores constantes, ative **Rewarded Video Ads** em *Monetization → Ads* (renda extra automática).

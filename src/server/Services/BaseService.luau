@@ -75,7 +75,7 @@ local function renderSlot(player: Player, plot: WorldService.Plot, index: number
 			BaseService.Sell(player, index)
 		end
 	end)
-	local steal = addPrompt(body, "Steal", "Roubar", name, Config.Steal.HoldDuration)
+	local steal = addPrompt(body, "Steal", "Pegar", name, Config.Steal.HoldDuration)
 	steal.Triggered:Connect(function(who)
 		if who ~= player then
 			StealService().TryStart(who, player, index)
@@ -222,7 +222,7 @@ local function giveSlapTool(player: Player)
 	end
 	local tool = Instance.new("Tool")
 	tool.Name = "Tapa"
-	tool.ToolTip = "Bata em ladrões para recuperar seus bichos!"
+	tool.ToolTip = "Bata em quem pegar seus bichos para recuperá-los!"
 	tool.RequiresHandle = false
 	tool.CanBeDropped = false
 	tool.Activated:Connect(function()

@@ -59,7 +59,7 @@ Blox Fruits, Brookhaven, Adopt Me!, Murder Mystery 2, Steal a Brainrot). O gêne
 
 ## Escolha para este projeto
 
-**Gênero "Steal" (clone de Steal a Brainrot) com identidade própria ("Rouba Bichos!")**:
+**Gênero "Steal" (clone de Steal a Brainrot) com identidade própria ("Pega Bichos!")**:
 é o gênero #1 em receita no momento, tem loop simples, monetiza bem com passes utilitários
 (não precisa de arte cara) e gera clipes virais naturalmente (roubo + defesa).
 

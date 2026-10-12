@@ -27,7 +27,7 @@ export type Profile = {
 
 local DataService = {}
 
-local STORE_NAME = "RoubaBichos_v1"
+local STORE_NAME = "RoubaBichos_v1" -- nome interno; não mudar (apagaria os saves)
 local AUTOSAVE_INTERVAL = 120
 local LOCK_EXPIRY = 30 * 60
 local MAX_LOAD_ATTEMPTS = 6

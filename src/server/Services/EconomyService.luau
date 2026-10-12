@@ -146,7 +146,7 @@ local function rebirth(player: Player): (boolean, string)
 		return false, "Você precisa de " .. Format.Cash(cost)
 	end
 	if StealService().IsInvolved(player) then
-		return false, "Termine o roubo primeiro!"
+		return false, "Termine de pegar o bicho primeiro!"
 	end
 	profile.Cash = Config.StartingCash
 	profile.Uncollected = 0
