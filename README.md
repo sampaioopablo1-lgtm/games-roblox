@@ -26,7 +26,15 @@ raridades, mutações Ouro (2x) e Diamante (5x).
 Toda compra é validada **no servidor**; `ProcessReceipt` é idempotente (cada recibo
 só concede uma vez) e os dados usam DataStore com trava de sessão e autosave.
 
-## Rodar no Roblox Studio
+## Jeito mais fácil (sem instalar nada além do Studio)
+
+1. Baixe [`build/RoubaBichos.rbxl`](build/RoubaBichos.rbxl) (botão **Download raw file**).
+2. Dê dois cliques no arquivo → abre no Roblox Studio.
+3. *Game Settings → Security → Enable Studio Access to API Services* → **Play**.
+
+Veja o passo a passo completo para leigos em [`docs/PASSO_A_PASSO.md`](docs/PASSO_A_PASSO.md).
+
+## Rodar com Rojo (para desenvolver)
 
 1. `rokit install` (instala Rojo + luau-lsp) e `rojo plugin install`.
 2. `rojo serve` → no Studio (Baseplate vazio) → Plugins → Rojo → **Connect**.
