@@ -6,3 +6,4 @@ globalTypes.d.luau
 *.rbxlx.lock
 # Mantemos o jogo compilado em build/ para quem não usa Rojo
 !build/*.rbxl
+assets/*.mp4
