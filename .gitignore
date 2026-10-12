@@ -5,4 +5,4 @@ globalTypes.d.luau
 *.rbxl.lock
 *.rbxlx.lock
 # Mantemos o jogo compilado em build/ para quem não usa Rojo
-!build/RoubaBichos.rbxl
+!build/*.rbxl
