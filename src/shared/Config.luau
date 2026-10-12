@@ -16,10 +16,10 @@ export type PassInfo = { Key: string, Id: number, Name: string, Description: str
 export type ProductInfo = { Key: string, Id: number, Name: string, Description: string, SuggestedPrice: number }
 
 Config.GamePasses = {
-	{ Key = "VIP", Id = 0, Name = "VIP", Description = "2x dinheiro para sempre + tag VIP", SuggestedPrice = 399 },
-	{ Key = "AutoCollect", Id = 0, Name = "Coleta Automática", Description = "O dinheiro da base vai direto pro seu bolso", SuggestedPrice = 199 },
-	{ Key = "ExtraSlots", Id = 0, Name = "+4 Vagas na Base", Description = "Guarde mais bichos e ganhe mais", SuggestedPrice = 249 },
-	{ Key = "SuperLock", Id = 0, Name = "Super Cadeado", Description = "Cadeado dura o dobro (120s)", SuggestedPrice = 149 },
+	{ Key = "VIP", Id = 2030594290, Name = "VIP", Description = "2x dinheiro para sempre + tag VIP", SuggestedPrice = 399 },
+	{ Key = "AutoCollect", Id = 2028752298, Name = "Coleta Automática", Description = "O dinheiro da base vai direto pro seu bolso", SuggestedPrice = 199 },
+	{ Key = "ExtraSlots", Id = 2029532279, Name = "+4 Vagas na Base", Description = "Guarde mais bichos e ganhe mais", SuggestedPrice = 249 },
+	{ Key = "SuperLock", Id = 2030174291, Name = "Super Cadeado", Description = "Cadeado dura o dobro (120s)", SuggestedPrice = 149 },
 	{ Key = "Lucky", Id = 0, Name = "Sortudo", Description = "Dobro de chance de mutações Ouro e Diamante", SuggestedPrice = 299 },
 	{ Key = "FastThief", Id = 0, Name = "Ladrão Veloz", Description = "Corre mais rápido carregando bichos roubados", SuggestedPrice = 179 },
 } :: { PassInfo }
