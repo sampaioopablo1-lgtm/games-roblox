@@ -3,7 +3,7 @@
 
 local Config = {}
 
-Config.GameName = "Rouba Bichos!"
+Config.GameName = "Pega Bichos!"
 
 -------------------------------------------------------------------------------
 -- MONETIZAÇÃO
@@ -21,7 +21,7 @@ Config.GamePasses = {
 	{ Key = "ExtraSlots", Id = 2029532279, Name = "+4 Vagas na Base", Description = "Guarde mais bichos e ganhe mais", SuggestedPrice = 249 },
 	{ Key = "SuperLock", Id = 2030174291, Name = "Super Cadeado", Description = "Cadeado dura o dobro (120s)", SuggestedPrice = 149 },
 	{ Key = "Lucky", Id = 0, Name = "Sortudo", Description = "Dobro de chance de mutações Ouro e Diamante", SuggestedPrice = 299 },
-	{ Key = "FastThief", Id = 0, Name = "Ladrão Veloz", Description = "Corre mais rápido carregando bichos roubados", SuggestedPrice = 179 },
+	{ Key = "FastThief", Id = 0, Name = "Pegador Veloz", Description = "Corre mais rápido carregando bichos pegos", SuggestedPrice = 179 },
 } :: { PassInfo }
 
 Config.Products = {
@@ -108,7 +108,7 @@ Config.Lock = {
 }
 
 Config.Steal = {
-	HoldDuration = 1.2, -- segurar E por X segundos para roubar
+	HoldDuration = 1.2, -- segurar E por X segundos para pegar
 	CarrySpeed = 13,
 	FastCarrySpeed = 19,
 	Timeout = 60, -- se não chegar na base em X s, o bicho volta

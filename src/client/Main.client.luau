@@ -163,7 +163,7 @@ player:GetAttributeChangedSignal("IncomePerSecond"):Connect(refreshTop)
 player:GetAttributeChangedSignal("Rebirths"):Connect(refreshTop)
 
 -------------------------------------------------------------------------------
--- Dica de controles / status de roubo
+-- Dica de controles / status de carregar bicho
 -------------------------------------------------------------------------------
 
 local hint = label(screen, "", UDim2.new(0.6, 0, 0, 34), UDim2.new(0.5, 0, 0, 104), 20)
@@ -176,7 +176,7 @@ local function refreshHint()
 		hint.Text = "😈 Carregando " .. carrying .. " — corra para a SUA base!"
 		hint.TextColor3 = COLORS.Red
 	else
-		hint.Text = "Esteira: pegue bichos • E = roubar • F = vender • Tapa = defender"
+		hint.Text = "Esteira: compre bichos • E = pegar dos outros • F = vender • Tapa = defender"
 		hint.TextColor3 = COLORS.Accent
 	end
 end

@@ -17,7 +17,7 @@ Cada arquivo `.luau` vira um Script/ModuleScript conforme o `default.project.jso
 4. No Studio: abra um **Baseplate vazio** → aba *Plugins* → *Rojo* → *Connect*.
 5. Aperte **Play**. O mapa é gerado por código, não precisa de `.rbxl`.
 
-Alternativa sem sincronização ao vivo: `rojo build -o RoubaBichos.rbxl` e abra o arquivo.
+Alternativa sem sincronização ao vivo: `rojo build -o PegaBichos.rbxl` e abra o arquivo.
 
 ## Opção B — MCP: Claude Code controlando o Studio
 

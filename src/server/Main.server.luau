@@ -19,4 +19,4 @@ ConveyorService.Init()
 StealService.Init()
 DataService.Init() -- por último: dispara OnLoaded para quem já estiver conectado
 
-print("[Rouba Bichos] Servidor pronto.")
+print("[Pega Bichos] Servidor pronto.")

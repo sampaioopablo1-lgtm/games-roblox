@@ -18,13 +18,13 @@ cd "$(dirname "$0")/.."
 VERSION_TYPE="${1:-Published}"
 
 mkdir -p build
-rojo build default.project.json -o build/RoubaBichos.rbxl
+rojo build default.project.json -o build/PegaBichos.rbxl
 
 curl -sS --fail-with-body -X POST \
   "https://apis.roblox.com/universes/v1/${ROBLOX_UNIVERSE_ID}/places/${ROBLOX_PLACE_ID}/versions?versionType=${VERSION_TYPE}" \
   -H "x-api-key: ${ROBLOX_API_KEY}" \
   -H "Content-Type: application/octet-stream" \
-  --data-binary @build/RoubaBichos.rbxl
+  --data-binary @build/PegaBichos.rbxl
 
 echo
 echo "OK: versão enviada (${VERSION_TYPE})."

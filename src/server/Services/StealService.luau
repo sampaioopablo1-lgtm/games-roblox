@@ -1,6 +1,6 @@
 --!strict
--- Roubo: segure E num bicho de outra base, carregue até a SUA base.
--- Se o ladrão morrer, levar um tapa, sair do jogo ou demorar demais, o bicho volta.
+-- Pegar: segure E num bicho de outra base, carregue até a SUA base.
+-- Se o pegador morrer, levar um tapa, sair do jogo ou demorar demais, o bicho volta.
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -27,7 +27,7 @@ type Carry = {
 	Connections: { RBXScriptConnection },
 }
 
-local carries: { [Player]: Carry } = {} -- por ladrão
+local carries: { [Player]: Carry } = {} -- por pegador
 local lastSlap: { [Player]: number } = {}
 
 local function setWalkSpeed(player: Player, speed: number)
@@ -47,7 +47,7 @@ function StealService.IsSlotBusy(owner: Player, index: number): boolean
 	return false
 end
 
--- Jogador está roubando ou sendo roubado agora?
+-- Jogador está pegando ou tendo um bicho pego agora?
 function StealService.IsInvolved(player: Player): boolean
 	for thief, carry in carries do
 		if thief == player or carry.Owner == player then
@@ -79,7 +79,7 @@ local function cancel(carry: Carry, reason: string)
 		EconomyService.Notify(carry.Owner, "Seu bicho voltou para casa! (" .. reason .. ")", "info")
 	end
 	if carry.Thief.Parent then
-		EconomyService.Notify(carry.Thief, "Roubo falhou: " .. reason, "error")
+		EconomyService.Notify(carry.Thief, "Não deu: " .. reason, "error")
 	end
 end
 
@@ -107,8 +107,8 @@ local function deliver(carry: Carry)
 		thiefProfile.TotalStolen += 1
 	end
 	local name = CritterMath.DisplayName(carry.Slot.Id, carry.Slot.Mutation)
-	EconomyService.Notify(carry.Thief, "Você roubou " .. name .. "! 😈", "rare")
-	EconomyService.Notify(carry.Owner, carry.Thief.DisplayName .. " roubou seu " .. name .. "! Tranque a base 🔒", "error")
+	EconomyService.Notify(carry.Thief, "Você pegou " .. name .. "! 😈", "rare")
+	EconomyService.Notify(carry.Owner, carry.Thief.DisplayName .. " pegou seu " .. name .. "! Tranque a base 🔒", "error")
 	DataService.Save(carry.Owner)
 	DataService.Save(carry.Thief)
 end
@@ -128,7 +128,7 @@ function StealService.TryStart(thief: Player, owner: Player, index: number)
 		return
 	end
 	if not BaseService.GetFreeSlot(thief) then
-		EconomyService.Notify(thief, "Sua base está cheia! Venda um bicho antes de roubar.", "error")
+		EconomyService.Notify(thief, "Sua base está cheia! Venda um bicho antes de pegar outro.", "error")
 		return
 	end
 	local character = thief.Character
@@ -143,7 +143,7 @@ function StealService.TryStart(thief: Player, owner: Player, index: number)
 		return
 	end
 
-	local model = CritterFactory.Build(slot.Id, slot.Mutation, { LabelExtra = "😈 ROUBANDO!" })
+	local model = CritterFactory.Build(slot.Id, slot.Mutation, { LabelExtra = "😈 PEGANDO!" })
 	CritterFactory.MakeCarryable(model, head, CFrame.new(0, head.Size.Y / 2 + 0.5, 0))
 	model.Parent = character
 
@@ -158,13 +158,13 @@ function StealService.TryStart(thief: Player, owner: Player, index: number)
 	}
 	carries[thief] = carry
 	table.insert(carry.Connections, humanoid.Died:Connect(function()
-		cancel(carry, "o ladrão caiu")
+		cancel(carry, "o pegador caiu")
 	end))
 
 	BaseService.SetSlotVisible(owner, index, false)
 	thief:SetAttribute("Carrying", CritterMath.DisplayName(slot.Id, slot.Mutation))
 	setWalkSpeed(thief, if MonetizationService.HasPass(thief, "FastThief") then Config.Steal.FastCarrySpeed else Config.Steal.CarrySpeed)
-	EconomyService.Notify(owner, "🚨 " .. thief.DisplayName .. " está roubando seu bicho! Dê um TAPA nele!", "error")
+	EconomyService.Notify(owner, "🚨 " .. thief.DisplayName .. " está pegando seu bicho! Dê um TAPA nele!", "error")
 end
 
 function StealService.Slap(attacker: Player)
@@ -227,7 +227,7 @@ function StealService.Init()
 	Players.PlayerRemoving:Connect(function(player: Player)
 		for _, carry in carries do
 			if carry.Thief == player then
-				cancel(carry, "o ladrão saiu")
+				cancel(carry, "o pegador saiu")
 			elseif carry.Owner == player then
 				cancel(carry, "o dono saiu")
 			end

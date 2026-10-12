@@ -1,10 +1,10 @@
-# Rouba Bichos! 🐾😈
+# Pega Bichos! 🐾😈
 
 Jogo Roblox no gênero **"steal"** (o mais rentável da plataforma em 2026 — ver
 [`docs/PESQUISA_MERCADO.md`](docs/PESQUISA_MERCADO.md)), pronto para publicar e monetizar.
 
 **Loop:** bichos passam numa esteira → você compra e coloca na sua base → eles
-geram dinheiro por segundo → **roube** bichos das bases dos outros (segure **E**)
+geram dinheiro por segundo → **pegue** bichos das bases dos outros (segure **E**)
 e corra para a sua → defenda a sua com **tapa** e **cadeado** → renasça para
 multiplicar a renda.
 
@@ -17,7 +17,7 @@ multiplicar a renda.
 | +4 Vagas na Base | 🌠 Chuva Mítica — ganha um Mítico + solta outro na esteira |
 | Super Cadeado (120 s) | Cadeado Instantâneo |
 | Sortudo — 2x mutações Ouro/Diamante | |
-| Ladrão Veloz | |
+| Pegador Veloz | |
 
 Mais: prêmio diário com sequência, ganho offline (2 h a 25 %), bônus por amigos no
 servidor (+10 % cada, até +50 %), placar global de renascimentos, 16 bichos em 6
@@ -28,7 +28,7 @@ só concede uma vez) e os dados usam DataStore com trava de sessão e autosave.
 
 ## Jeito mais fácil (sem instalar nada além do Studio)
 
-1. Baixe [`build/RoubaBichos.rbxl`](build/RoubaBichos.rbxl) (botão **Download raw file**).
+1. Baixe [`build/PegaBichos.rbxl`](build/PegaBichos.rbxl) (botão **Download raw file**).
 2. Dê dois cliques no arquivo → abre no Roblox Studio.
 3. *Game Settings → Security → Enable Studio Access to API Services* → **Play**.
 
@@ -41,7 +41,7 @@ Veja o passo a passo completo para leigos em [`docs/PASSO_A_PASSO.md`](docs/PASS
 3. Ative *Game Settings → Security → Enable Studio Access to API Services* (DataStore).
 4. **Play**. O mapa inteiro (esteira, 8 bases, placar) é gerado por código.
 
-Sem sincronização ao vivo: `rojo build -o RoubaBichos.rbxl`.
+Sem sincronização ao vivo: `rojo build -o PegaBichos.rbxl`.
 
 ## Publicar e começar a ganhar
 
@@ -51,7 +51,7 @@ Sem sincronização ao vivo: `rojo build -o RoubaBichos.rbxl`.
    em [`src/shared/Config.luau`](src/shared/Config.luau) e cole os **IDs** lá
    (itens com `Id = 0` ficam ocultos na loja).
 3. Ative **Rewarded Video Ads** quando a experiência for elegível (receita extra sem código).
-4. Faça um ícone/thumbnail chamativo e poste clipes de roubo no TikTok/YouTube Shorts
+4. Faça um ícone/thumbnail chamativo e poste clipes de "pega" no TikTok/YouTube Shorts
    — é assim que os jogos "steal" viralizam.
 5. Atualize toda semana (bicho novo, evento). Edite só `Config.luau`.
 6. Saque via **DevEx** (100k Robux ≈ US$ 350, mínimo 30k).
