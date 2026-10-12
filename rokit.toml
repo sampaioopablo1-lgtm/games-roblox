@@ -1,0 +1,4 @@
+# Ferramentas de linha de comando (instale com `rokit install`)
+[tools]
+rojo = "rojo-rbx/rojo@7.5.1"
+luau-lsp = "JohnnyMorganz/luau-lsp@1.70.1"

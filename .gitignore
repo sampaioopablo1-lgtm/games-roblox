@@ -1,0 +1,8 @@
+sourcemap.json
+globalTypes.d.luau
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+# Mantemos o jogo compilado em build/ para quem não usa Rojo
+!build/RoubaBichos.rbxl
